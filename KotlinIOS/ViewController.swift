@@ -10,16 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var emailHelpButton: UIButton!
+    @IBOutlet weak var passwordHelpButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let purple = UIColor(named: "HallmarkPurple") else { return }
+        loginButton.backgroundColor = purple
+        emailHelpButton.layer.borderColor = purple.cgColor
+        passwordHelpButton.layer.borderColor = purple.cgColor
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func loginButtonPressed(sender: UIButton) {
+        
+    }
 
+    @IBAction func emailHelpPressed(sender: UIButton) {
+
+    }
+
+    @IBAction func passwordHelpPressed(sender: UIButton) {
+
+    }
 }
 
