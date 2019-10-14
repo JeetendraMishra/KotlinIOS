@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed(sender: UIButton) {
-        
+        // TODO: Add functionality here...
     }
 
     @IBAction func emailHelpPressed(sender: UIButton) {
