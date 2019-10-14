@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailHelpButton: UIButton!
     @IBOutlet weak var passwordHelpButton: UIButton!
 
+    var alert = UIAlertController()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,11 +39,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func emailHelpPressed(sender: UIButton) {
-
+        alert = UIAlertController(title: nil, message: "Please specify a vaild email address", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
     @IBAction func passwordHelpPressed(sender: UIButton) {
-
+        alert = UIAlertController(title: nil, message:
+"""
+Password Validation Hint:
+Password should be minimum of
+8 characters long. It should
+contain at least one capital
+letter, one small letter, one
+number and one special character:
+~!@#$%^&*()-_=+|[]{};:’\\“,<.>/?
+""", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
