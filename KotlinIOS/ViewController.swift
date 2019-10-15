@@ -20,11 +20,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapRecognized(sender:)))
+        recognizer.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(recognizer)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // TODO: Add screen transition logic here
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let purple = UIColor(named: "HallmarkPurple") else { return }
+        let purple = UIColor(red: 0.334, green: 0.205, blue: 0.506, alpha: 1.0)
         loginButton.backgroundColor = purple
         emailHelpButton.layer.borderColor = purple.cgColor
         passwordHelpButton.layer.borderColor = purple.cgColor
@@ -34,8 +42,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    @objc func tapRecognized(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+
     @IBAction func loginButtonPressed(sender: UIButton) {
         // TODO: Add functionality here...
+
+        // TODO: Remove comment If you want to move from this screen to the next
+        //performSegue(withIdentifier: "SegueIdentifier1", sender: self)
     }
 
     @IBAction func emailHelpPressed(sender: UIButton) {

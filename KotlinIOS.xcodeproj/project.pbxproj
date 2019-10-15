@@ -12,6 +12,7 @@
 		1958D0F1233D4799001D6BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1958D0EF233D4799001D6BFB /* Main.storyboard */; };
 		1958D0F3233D4799001D6BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1958D0F2233D4799001D6BFB /* Assets.xcassets */; };
 		1958D0F6233D4799001D6BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1958D0F4233D4799001D6BFB /* LaunchScreen.storyboard */; };
+		576A2589235644A3001B5B94 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A2588235644A3001B5B94 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1958D0F2233D4799001D6BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1958D0F5233D4799001D6BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1958D0F7233D4799001D6BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576A2588235644A3001B5B94 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				1958D0EB233D4799001D6BFB /* AppDelegate.swift */,
 				1958D0ED233D4799001D6BFB /* ViewController.swift */,
+				576A2588235644A3001B5B94 /* ViewController2.swift */,
 				1958D0EF233D4799001D6BFB /* Main.storyboard */,
 				1958D0F2233D4799001D6BFB /* Assets.xcassets */,
 				1958D0F4233D4799001D6BFB /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				1958D0EE233D4799001D6BFB /* ViewController.swift in Sources */,
 				1958D0EC233D4799001D6BFB /* AppDelegate.swift in Sources */,
+				576A2589235644A3001B5B94 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +279,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KotlinIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jetbrains.handson.mpp.mobile.KotlinIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,8 +295,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KotlinIOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jetbrains.handson.mpp.mobile.KotlinIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
