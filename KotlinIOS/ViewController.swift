@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let purple = UIColor(named: "HallmarkPurple") else { return }
+        let purple = UIColor.purple
         loginButton.backgroundColor = purple
         emailHelpButton.layer.borderColor = purple.cgColor
         passwordHelpButton.layer.borderColor = purple.cgColor
